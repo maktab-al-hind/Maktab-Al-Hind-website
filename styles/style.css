@@ -1,0 +1,115 @@
+.mosque-arch {
+    border-radius: 50% 50% 0 0 / 15% 15% 0 0; /* Subtle arch */
+}
+
+/* Complex Persian Arch Shape */
+.persian-arch-container {
+    position: relative;
+    padding: 40px 20px 0 20px; /* Space for the top arch */
+    background-color: #004B23; /* Fallback */
+    /* Intricate Pattern Background */
+    background-image: 
+        linear-gradient(rgba(0, 75, 35, 0.85), rgba(0, 75, 35, 0.85)),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border: 8px solid #D4AF37;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.persian-arch-inner {
+    background-color: #FDFBF7;
+    position: relative;
+    min-height: 80vh;
+    /* The Arch Shape */
+    clip-path: polygon(
+        0% 100%, 
+        0% 25%, 
+        10% 25%, 
+        10% 15%, 
+        50% 0%, 
+        90% 15%, 
+        90% 25%, 
+        100% 25%, 
+        100% 100%
+    );
+    /* Smooth curve approximation using border-radius on a pseudo-element is harder with clip-path. 
+       Let's try a different approach for the shape: 
+       A combination of border-radius.
+    */
+    clip-path: none; /* Reset */
+    border-radius: 150px 150px 0 0; /* Standard Dome */
+    margin-top: 20px;
+    border: 4px solid #D4AF37; /* This won't show if we use clip-path on parent, but here it's fine */
+}
+
+/* Better Arch using Mask or SVG would be ideal, but let's use a CSS trick for the 'Pointed' look */
+.pointed-arch {
+    position: relative;
+    background-color: #FDFBF7;
+    margin-top: 60px;
+}
+.pointed-arch::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #FDFBF7;
+    border-radius: 50% 50% 0 0; /* Round top */
+    clip-path: polygon(0% 100%, 0% 50%, 50% 0%, 100% 50%, 100% 100%); /* Pointy top? No. */
+    /* Let's just use a nice border radius */
+    border-radius: 100% 100% 0 0;
+    z-index: 1;
+}
+
+/* Let's try a simpler, elegant arch that matches the image's "Frame" concept */
+.frame-pattern {
+    background-color: #004B23;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.15'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.arch-window {
+    background-color: #FDFBF7;
+    /* Create a distinct arch shape */
+    /* Using a percentage for the horizontal radius ensures it spans the width */
+    /* Using a fixed or percentage vertical radius controls the height of the arch */
+    border-radius: 50% 50% 0 0 / 150px 150px 0 0;
+    
+    /* Add a gold border to emphasize the shape */
+    border: 4px solid #D4AF37;
+    border-bottom: none; /* Open at the bottom */
+    
+    position: relative;
+    z-index: 10;
+}
+
+/* Responsive adjustment for the arch height */
+@media (min-width: 640px) {
+    .arch-window {
+        border-radius: 50% 50% 0 0 / 250px 250px 0 0;
+    }
+}
+
+.pattern-bg {
+    background-color: #004B23;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003b1c' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}-arch {
+    border-radius: 50% 50% 0 0 / 15% 15% 0 0; /* Subtle arch */
+}
+.pattern-bg {
+    background-color: #004B23;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003b1c' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* Carousel Styles */
+.carousel-container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

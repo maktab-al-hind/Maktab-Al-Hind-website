@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktab Al-Hind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="frame-pattern min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-islamic-green/95 backdrop-blur-sm border-b-4 border-islamic-gold sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-heading text-2xl text-islamic-gold font-bold">Maktab Al-Hind</a>
+
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-white hover:text-islamic-gold transition font-body">Home</a>
+                        <a href="#curriculum" class="text-white hover:text-islamic-gold transition font-body">Curriculum</a>
+                        <a href="#about" class="text-white hover:text-islamic-gold transition font-body">About Us</a>
+                        <a href="#contact" class="text-white hover:text-islamic-gold transition font-body">Contact</a>
+                        <a href="#" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-islamic-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-islamic-green border-t border-green-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Home</a>
+                <a href="#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Curriculum</a>
+                <a href="#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">About Us</a>
+                <a href="#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Contact</a>
+                <a href="#" class="block px-3 py-2 bg-islamic-gold text-islamic-green rounded-full font-bold text-center mt-2">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="w-full max-w-6xl mx-auto px-4 pt-4 sm:px-8 sm:pt-8 mt-8">
+        
+        <!-- Inner Arch Container -->
+        <div class="arch-window flex flex-col overflow-hidden shadow-2xl border-8 border-islamic-gold">
+
+            <!-- Header Section -->
+            <header id="home" class="p-4 text-center z-30 relative pt-12 sm:pt-16 mb-8 sm:mb-12">
+                <h1 class="font-heading text-4xl sm:text-6xl text-islamic-gold font-bold drop-shadow-md my-5">Maktab Al-Hind</h1>
+                <h1 class="font-heading text-3xl sm:text-4xl font-bold drop-shadow-md"> plus </h1> 
+                <h1 class="font-heading text-4xl sm:text-6xl text-islamic-gold font-bold drop-shadow-md my-5">Al-Hind Hifz Academy</h1>
+                <p class="font-body text-lg sm:text-xl mt-2">Nurturing Young Hearts with Islamic Values & Tarbiyah</p>
+            </header>
+
+            <!-- Hero Section with Video Carousel -->
+            <!-- Hero Section with Video Carousel -->
+            <section class="relative w-full bg-black overflow-hidden">
+                <!-- Video Carousel Container - Responsive aspect ratio -->
+                <div id="videoCarousel" class="relative w-full" style="aspect-ratio: 16/9; max-height: 70vh;">
+                    <!-- Video Slides -->
+                    <div class="video-slides relative w-full h-full">
+                        <!-- Video 1 -->
+                        <div class="video-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.38.47 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
+                                <button onclick="togglePlay(0)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(0)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(0)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(0)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.39.19 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
+                                <button onclick="togglePlay(1)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(1)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(1)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(1)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.40.22 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
+                                <button onclick="togglePlay(2)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(2)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(2)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(2)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.40.45 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
+                                <button onclick="togglePlay(3)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(3)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(3)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(3)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.41.07 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
+                                <button onclick="togglePlay(4)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(4)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(4)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(4)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="changeVideoSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button onclick="changeVideoSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Dot Indicators -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+                        <button onclick="goToVideoSlide(0)" class="video-dot w-3 h-3 rounded-full bg-islamic-gold transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(1)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(2)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(3)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(4)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Curriculum Section -->
+            <section id="curriculum" class="py-16 px-4 bg-cream flex-grow">
+                <div class="text-center mb-12">
+                    <h3 class="font-heading text-4xl text-islamic-green font-bold border-b-2 border-islamic-gold inline-block pb-2">Our Curriculum</h3>
+                </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- Cards Container -->
+                    <div class="flex flex-wrap justify-center gap-8 py-6 px-4">
+                        
+                        <!-- Card 1: Maktab Programs -->
+                        <div class="w-full sm:w-[350px] bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-xl border border-green-100 transform transition hover:-translate-y-3 hover:shadow-2xl duration-300 overflow-hidden group">
+                            <!-- Card Header -->
+                            <div class="bg-islamic-green p-6 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-islamic-gold/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-3 text-4xl border-2 border-islamic-gold/50 group-hover:scale-110 transition-transform duration-300">📖</div>
+                                <h4 class="font-heading text-2xl text-white text-center">Maktab Programs</h4>
+                                <p class="text-islamic-gold text-sm text-center mt-1">Foundation of Quranic Learning</p>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <ul class="text-gray-700 font-body space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span><strong class="text-islamic-green">Qaida</strong> - Learn Tajweed rules</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span><strong class="text-islamic-green">Nazarah</strong> - Learn to read Quran</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Surah memorization</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Hifz revision</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full mt-6 bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
+                                    <span>Enroll Now</span>
+                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Hifz Programs -->
+                        <div class="w-full sm:w-[350px] bg-gradient-to-br from-white to-yellow-50 rounded-2xl shadow-xl border border-yellow-100 transform transition hover:-translate-y-3 hover:shadow-2xl duration-300 overflow-hidden group">
+                            <!-- Card Header -->
+                            <div class="bg-gradient-to-r from-islamic-gold to-yellow-500 p-6 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-3 text-4xl border-2 border-white/50 group-hover:scale-110 transition-transform duration-300">🧠</div>
+                                <h4 class="font-heading text-2xl text-islamic-green text-center font-bold">Hifz Programs</h4>
+                                <p class="text-islamic-green/80 text-sm text-center mt-1">Memorization Excellence</p>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <ul class="text-gray-700 font-body space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Memorize any surah of your choice</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Easy techniques for fast memorization</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Revision plan & guidance</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Tajweed correction</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Personal support from teacher</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full mt-6 bg-islamic-gold hover:bg-yellow-500 text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-green group-hover:text-white">
+                                    <span>Enroll Now</span>
+                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Other Programs -->
+                        <div class="w-full sm:w-[350px] bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-xl border border-green-100 transform transition hover:-translate-y-3 hover:shadow-2xl duration-300 overflow-hidden group">
+                            <!-- Card Header -->
+                            <div class="bg-islamic-green p-6 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-islamic-gold/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-3 text-4xl border-2 border-islamic-gold/50 group-hover:scale-110 transition-transform duration-300">🕌</div>
+                                <h4 class="font-heading text-2xl text-white text-center">Other Programs</h4>
+                                <p class="text-islamic-gold text-sm text-center mt-1">Islamic Knowledge & Values</p>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <ul class="text-gray-700 font-body space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span><strong class="text-islamic-green">Nasihah Series</strong> - Masail/Aqaid</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span><strong class="text-islamic-green">Seeratun Nabi</strong> (PBUH)</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Akhlaq & Character Building</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Daily Duas & Supplications</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full mt-6 bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
+                                    <span>Enroll Now</span>
+                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+            <footer id="contact" class="bg-islamic-green text-white py-10 px-6 border-t-8 border-islamic-gold">
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-center md:text-left">
+                    <div>
+                        <h2 class="font-heading text-3xl text-islamic-gold mb-4">Maktab Al-Hind</h2>
+                        <p class="opacity-80 mb-4">Dedicated to preserving Islamic identity and values in the next generation.</p>
+                    </div>
+                    <div class="flex flex-col justify-center md:items-end">
+                        <h3 class="font-heading text-xl text-islamic-gold mb-3">Contact Us</h3>
+                        <p class="flex items-center gap-2 mb-2 justify-center md:justify-end">
+                            <span>📍</span> 123 Islamic Center Road, City, State, Zip
+                        </p>
+                        <p class="flex items-center gap-2 justify-center md:justify-end">
+                            <span>📞</span> +1 (555) 123-4567
+                        </p>
+                        <p class="flex items-center gap-2 justify-center md:justify-end">
+                            <span>✉️</span> info@maktabalhind.edu
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center mt-8 pt-4 border-t border-green-800 opacity-60 text-sm">
+                    &copy; 2024 Maktab Al-Hind. All rights reserved.
+                </div>
+            </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
