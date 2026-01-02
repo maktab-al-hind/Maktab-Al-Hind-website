@@ -14,11 +14,16 @@
     <!-- Navbar -->
     <nav class="bg-islamic-green/95 backdrop-blur-sm border-b-4 border-islamic-gold sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="#" class="font-heading text-2xl text-islamic-gold font-bold">Maktab Al-Hind</a>
-
+                    <a href="#" class="flex items-center gap-3">
+                        <img src="https://github.com/maktab-al-hind/Maktab-Al-Hind-website/blob/main/assets/Untitled.jpeg?raw=true" alt="Maktab Al-Hind Logo" class="h-12 w-12 rounded-full object-cover border-2 border-islamic-gold">
+                        <div class="flex flex-col">
+                            <span class="font-heading text-2xl text-islamic-gold font-bold">Maktab Al-Hind</span>
+                            <span class="text-xs text-gray-300 italic">Tarbiyat cultivating the heart, mind and soul</span>
+                        </div>
+                    </a>
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
@@ -27,7 +32,7 @@
                         <a href="#curriculum" class="text-white hover:text-islamic-gold transition font-body">Curriculum</a>
                         <a href="#about" class="text-white hover:text-islamic-gold transition font-body">About Us</a>
                         <a href="#contact" class="text-white hover:text-islamic-gold transition font-body">Contact</a>
-                        <a href="#" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Enroll Now</a>
+                        <!-- <a href="#" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Enroll Now</a> -->
                     </div>
                 </div>
                 <!-- Mobile Menu Button -->
@@ -47,59 +52,111 @@
                 <a href="#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Curriculum</a>
                 <a href="#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">About Us</a>
                 <a href="#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Contact</a>
-                <a href="#" class="block px-3 py-2 bg-islamic-gold text-islamic-green rounded-full font-bold text-center mt-2">Enroll Now</a>
+                <!-- <a href="#curriculum" class="block px-3 py-2 bg-islamic-gold text-islamic-green rounded-full font-bold text-center mt-2">Enroll Now</a> -->
             </div>
         </div>
     </nav>
 
     <!-- Main Container -->
-    <div class="w-full max-w-6xl mx-auto px-4 pt-4 sm:px-8 sm:pt-8 mt-8">
+    <div class="w-full max-w-7xl mx-auto px-4 pt-4 sm:px-8 sm:pt-8 mt-8 main-container">
         
         <!-- Inner Arch Container -->
         <div class="arch-window flex flex-col overflow-hidden shadow-2xl border-8 border-islamic-gold">
 
             <!-- Header Section -->
             <header id="home" class="p-4 text-center z-30 relative pt-12 sm:pt-16 mb-8 sm:mb-12">
-                <h1 class="font-heading text-4xl sm:text-6xl text-islamic-gold font-bold drop-shadow-md my-5">Maktab Al-Hind</h1>
+                <img src="https://github.com/maktab-al-hind/Maktab-Al-Hind-website/blob/main/assets/Untitled.jpeg?raw=true" alt="Maktab Al-Hind Logo" class="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full object-cover border-4 border-islamic-gold shadow-lg mb-6">
+                <h1 class="font-heading text-5xl sm:text-7xl text-islamic-gold font-bold drop-shadow-md my-5">Maktab Al-Hind</h1>
                 <h1 class="font-heading text-3xl sm:text-4xl font-bold drop-shadow-md"> plus </h1> 
-                <h1 class="font-heading text-4xl sm:text-6xl text-islamic-gold font-bold drop-shadow-md my-5">Al-Hind Hifz Academy</h1>
-                <p class="font-body text-lg sm:text-xl mt-2">Nurturing Young Hearts with Islamic Values & Tarbiyah</p>
+                <h1 class="font-heading text-5xl sm:text-7xl text-islamic-gold font-bold drop-shadow-md my-5">Al-Hind Hifz Academy</h1> 
+                <h3 class="font-heading text-3xl sm:text-4xl font-bold drop-shadow-md text-gray-500">Affiliated to Deeni Taleemi Board, Jamiat Ulema-e-Hind</h3>
             </header>
 
             <!-- Hero Section with Video Carousel -->
-            <!-- Hero Section with Video Carousel -->
-            <section class="relative w-full bg-black overflow-hidden">
+            <section class="relative w-full bg-transparent overflow-hidden px-4 sm:px-6">
                 <!-- Video Carousel Container - Responsive aspect ratio -->
-                <div id="videoCarousel" class="relative w-full" style="aspect-ratio: 16/9; max-height: 70vh;">
+                <div id="videoCarousel" class="relative w-full aspect-[4/3] md:aspect-video max-h-[70vh]">
                     <!-- Video Slides -->
                     <div class="video-slides relative w-full h-full">
                         <!-- Video 1 -->
                         <div class="video-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center bg-black">
                             <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.38.47 PM.mp4"
+                                class="w-full h-full object-contain rotate-90"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 10.43.17 PM.mp4"
                                 loop
                                 playsinline>
                             </video>
                             <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
-                                <button onclick="togglePlay(0)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(0)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                 </button>
-                                <button onclick="toggleMute(0)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <button onclick="toggleMute(0)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                 </button>
-                                <button onclick="restartVideo(0)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                <button onclick="restartVideo(0)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
                                 </button>
-                                <button onclick="toggleFullscreen(0)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                <button onclick="toggleFullscreen(0)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                                 </button>
                             </div>
                         </div>
                         <!-- Video 2 -->
+                        <div class="video-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 10.28.15 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(1)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(1)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(1)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(1)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
+                            <video 
+                                class="w-full h-full object-contain"
+                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 11.13.33 PM.mp4"
+                                loop
+                                playsinline>
+                            </video>
+                            <!-- Video Controls -->
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(2)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                </button>
+                                <button onclick="toggleMute(2)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <button onclick="restartVideo(2)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                </button>
+                                <button onclick="toggleFullscreen(2)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
                         <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
                             <video 
                                 class="w-full h-full object-contain"
@@ -108,24 +165,24 @@
                                 playsinline>
                             </video>
                             <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
-                                <button onclick="togglePlay(1)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(3)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                 </button>
-                                <button onclick="toggleMute(1)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <button onclick="toggleMute(3)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                 </button>
-                                <button onclick="restartVideo(1)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                <button onclick="restartVideo(3)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
                                 </button>
-                                <button onclick="toggleFullscreen(1)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                <button onclick="toggleFullscreen(3)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                                 </button>
                             </div>
                         </div>
-                        <!-- Video 3 -->
+                        <!-- Video 5 -->
                         <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
                             <video 
                                 class="w-full h-full object-contain"
@@ -134,24 +191,24 @@
                                 playsinline>
                             </video>
                             <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
-                                <button onclick="togglePlay(2)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(4)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                 </button>
-                                <button onclick="toggleMute(2)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <button onclick="toggleMute(4)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                 </button>
-                                <button onclick="restartVideo(2)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                <button onclick="restartVideo(4)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
                                 </button>
-                                <button onclick="toggleFullscreen(2)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                <button onclick="toggleFullscreen(4)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                                 </button>
                             </div>
                         </div>
-                        <!-- Video 4 -->
+                        <!-- Video 6 -->
                         <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
                             <video 
                                 class="w-full h-full object-contain"
@@ -160,24 +217,24 @@
                                 playsinline>
                             </video>
                             <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
-                                <button onclick="togglePlay(3)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(5)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                 </button>
-                                <button onclick="toggleMute(3)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <button onclick="toggleMute(5)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                 </button>
-                                <button onclick="restartVideo(3)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                <button onclick="restartVideo(5)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
                                 </button>
-                                <button onclick="toggleFullscreen(3)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                <button onclick="toggleFullscreen(5)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                                 </button>
                             </div>
                         </div>
-                        <!-- Video 5 -->
+                        <!-- Video 7 -->
                         <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
                             <video 
                                 class="w-full h-full object-contain"
@@ -186,20 +243,20 @@
                                 playsinline>
                             </video>
                             <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full z-30">
-                                <button onclick="togglePlay(4)" class="play-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
+                                <button onclick="togglePlay(6)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                 </button>
-                                <button onclick="toggleMute(4)" class="mute-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <button onclick="toggleMute(6)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                 </button>
-                                <button onclick="restartVideo(4)" class="restart-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                                <button onclick="restartVideo(6)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
                                 </button>
-                                <button onclick="toggleFullscreen(4)" class="fullscreen-btn w-10 h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                <button onclick="toggleFullscreen(6)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -220,12 +277,14 @@
                         <button onclick="goToVideoSlide(2)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
                         <button onclick="goToVideoSlide(3)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
                         <button onclick="goToVideoSlide(4)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(5)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(6)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
                     </div>
                 </div>
             </section>
 
             <!-- Curriculum Section -->
-            <section id="curriculum" class="py-16 px-4 bg-cream flex-grow">
+            <section id="curriculum" class="py-16 px-4 bg-transparent flex-grow">
                 <div class="text-center mb-12">
                     <h3 class="font-heading text-4xl text-islamic-green font-bold border-b-2 border-islamic-gold inline-block pb-2">Our Curriculum</h3>
                 </div>
@@ -263,10 +322,17 @@
                                         <span>Hifz revision</span>
                                     </li>
                                 </ul>
-                                <button class="w-full mt-6 bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                </button>
+                                <a href="maktab-programs.html" class="block mt-6 mb-3">
+                                    <button class="w-full bg-white border-2 border-islamic-green text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 hover:bg-green-50 flex items-center justify-center gap-2">
+                                        <span>Learn More</span>
+                                    </button>
+                                </a>
+                                <a href="https://forms.gle/wjucJ9ycqMoKyHdNA">
+                                    <button class="w-full bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
+                                        <span>Enroll Now</span>
+                                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -276,15 +342,15 @@
                             <div class="bg-gradient-to-r from-islamic-gold to-yellow-500 p-6 relative overflow-hidden">
                                 <div class="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                                 <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-3 text-4xl border-2 border-white/50 group-hover:scale-110 transition-transform duration-300">🧠</div>
-                                <h4 class="font-heading text-2xl text-islamic-green text-center font-bold">Hifz Programs</h4>
-                                <p class="text-islamic-green/80 text-sm text-center mt-1">Memorization Excellence</p>
+                                <h4 class="font-heading text-2xl text-islamic-green text-center font-bold">Hifz Programs (full-time)</h4>
+                                <p class="text-islamic-green/80 text-sm text-center mt-1">Memorization excellence</p>
                             </div>
                             <!-- Card Body -->
                             <div class="p-6">
                                 <ul class="text-gray-700 font-body space-y-3">
                                     <li class="flex items-start gap-3">
                                         <span class="text-islamic-gold mt-1">✦</span>
-                                        <span>Memorize any surah of your choice</span>
+                                        <span>Memorize complete Quran</span>
                                     </li>
                                     <li class="flex items-start gap-3">
                                         <span class="text-islamic-gold mt-1">✦</span>
@@ -303,10 +369,17 @@
                                         <span>Personal support from teacher</span>
                                     </li>
                                 </ul>
-                                <button class="w-full mt-6 bg-islamic-gold hover:bg-yellow-500 text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-green group-hover:text-white">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                </button>
+                                <a href="hifz-programs.html" class="block mt-6 mb-3">
+                                    <button class="w-full bg-white border-2 border-islamic-gold text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 hover:bg-yellow-50 flex items-center justify-center gap-2">
+                                        <span>Learn More</span>
+                                    </button>
+                                </a>
+                                <a href="https://forms.gle/MTRJ3eeNCgbeoXhS7">
+                                    <button class="w-full bg-islamic-gold hover:bg-yellow-500 text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-green group-hover:text-white">
+                                        <span>Enroll Now</span>
+                                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -317,11 +390,15 @@
                                 <div class="absolute top-0 right-0 w-32 h-32 bg-islamic-gold/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                                 <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-3 text-4xl border-2 border-islamic-gold/50 group-hover:scale-110 transition-transform duration-300">🕌</div>
                                 <h4 class="font-heading text-2xl text-white text-center">Other Programs</h4>
-                                <p class="text-islamic-gold text-sm text-center mt-1">Islamic Knowledge & Values</p>
+                                <p class="text-islamic-gold text-sm text-center mt-1">Customized after-school programs</p>
                             </div>
                             <!-- Card Body -->
                             <div class="p-6">
                                 <ul class="text-gray-700 font-body space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-islamic-gold mt-1">✦</span>
+                                        <span>Memorize any surah of your choice</span>
+                                    </li>
                                     <li class="flex items-start gap-3">
                                         <span class="text-islamic-gold mt-1">✦</span>
                                         <span><strong class="text-islamic-green">Nasihah Series</strong> - Masail/Aqaid</span>
@@ -339,10 +416,17 @@
                                         <span>Daily Duas & Supplications</span>
                                     </li>
                                 </ul>
-                                <button class="w-full mt-6 bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                </button>
+                                <a href="other-programs.html" class="block mt-6 mb-3">
+                                    <button class="w-full bg-white border-2 border-islamic-green text-islamic-green font-bold py-3 px-6 rounded-xl transition duration-300 hover:bg-green-50 flex items-center justify-center gap-2">
+                                        <span>Learn More</span>
+                                    </button>
+                                </a>
+                                <a href="#contact">
+                                    <button class="w-full bg-islamic-green hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group-hover:bg-islamic-gold group-hover:text-islamic-green">
+                                        <span>Enroll Now</span>
+                                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -354,25 +438,68 @@
 
     <!-- Footer -->
             <footer id="contact" class="bg-islamic-green text-white py-10 px-6 border-t-8 border-islamic-gold">
-                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-center md:text-left">
-                    <div>
-                        <h2 class="font-heading text-3xl text-islamic-gold mb-4">Maktab Al-Hind</h2>
-                        <p class="opacity-80 mb-4">Dedicated to preserving Islamic identity and values in the next generation.</p>
+                <div class="max-w-5xl mx-auto">
+                    <!-- Contact Us Section - Prominent -->
+                    <div class="text-center mb-8">
+                        <h2 class="font-heading text-3xl sm:text-4xl text-islamic-gold mb-2">Contact Us</h2>
+                        <div class="w-20 h-1 bg-islamic-gold mx-auto rounded-full"></div>
                     </div>
-                    <div class="flex flex-col justify-center md:items-end">
-                        <h3 class="font-heading text-xl text-islamic-gold mb-3">Contact Us</h3>
-                        <p class="flex items-center gap-2 mb-2 justify-center md:justify-end">
-                            <span>📍</span> 123 Islamic Center Road, City, State, Zip
-                        </p>
-                        <p class="flex items-center gap-2 justify-center md:justify-end">
-                            <span>📞</span> +1 (555) 123-4567
-                        </p>
-                        <p class="flex items-center gap-2 justify-center md:justify-end">
-                            <span>✉️</span> info@maktabalhind.edu
-                        </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 text-center mb-8">
+                        <!-- Address -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition">
+                            <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                                📍
+                            </div>
+                            <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
+                            
+                            <!-- Branch 1 -->
+                            <div class="bg-white/10 rounded-xl p-3 mb-3">
+                                <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
+                                <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
+                                <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
+                                <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
+                            </div>
+                            
+                            <!-- Branch 2 -->
+                            <div class="bg-white/10 rounded-xl p-3">
+                                <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
+                                <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
+                                <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
+                                <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone & Email Column -->
+                        <div class="flex flex-col gap-4">
+                            <!-- Phone -->
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                                <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                                    📞
+                                </div>
+                                <h3 class="font-heading text-lg text-islamic-gold mb-3">Call Us</h3>
+                                <p class="text-xl font-bold">+91 952-848-8899</p>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                                <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                                    ✉️
+                                </div>
+                                <h3 class="font-heading text-lg text-islamic-gold mb-3">Email Us</h3>
+                                <p class="font-bold break-all">institutealhindislamic</p>
+                                <p class="font-bold">at gmail dot com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Brand Section -->
+                    <div class="text-center border-t border-white/20 pt-6">
+                        <h2 class="font-heading text-2xl text-islamic-gold mb-1">Maktab Al-Hind</h2>
+                        <p class="opacity-80 text-sm">Affiliated to Deeni Taleemi Board, Jamiat Ulema-e-Hind</p>
                     </div>
                 </div>
-                <div class="text-center mt-8 pt-4 border-t border-green-800 opacity-60 text-sm">
+                <div class="text-center mt-6 pt-3 border-t border-green-800 opacity-60 text-xs">
                     &copy; 2024 Maktab Al-Hind. All rights reserved.
                 </div>
             </footer>

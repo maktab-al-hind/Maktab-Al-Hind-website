@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Programs - Maktab Al-Hind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="frame-pattern min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-islamic-green/95 backdrop-blur-sm border-b-4 border-islamic-gold sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="https://github.com/maktab-al-hind/Maktab-Al-Hind-website/blob/main/assets/Untitled.jpeg?raw=true" alt="Maktab Al-Hind Logo" class="h-12 w-12 rounded-full object-cover border-2 border-islamic-gold">
+                        <div class="flex flex-col">
+                            <span class="font-heading text-2xl text-islamic-gold font-bold">Maktab Al-Hind</span>
+                            <span class="text-xs text-gray-300 italic">Tarbiyat cultivating the heart, mind and soul</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-white hover:text-islamic-gold transition font-body">Home</a>
+                        <a href="index.html#curriculum" class="text-white hover:text-islamic-gold transition font-body">Curriculum</a>
+                        <a href="index.html#about" class="text-white hover:text-islamic-gold transition font-body">About Us</a>
+                        <a href="index.html#contact" class="text-white hover:text-islamic-gold transition font-body">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-islamic-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-islamic-green border-t border-green-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Home</a>
+                <a href="index.html#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Curriculum</a>
+                <a href="index.html#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">About Us</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-4 border-islamic-gold/30">
+            
+            <!-- Header -->
+            <div class="bg-islamic-green p-8 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-islamic-gold/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-islamic-gold/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+                
+                <h1 class="font-heading text-4xl sm:text-5xl text-islamic-gold font-bold mb-4 relative z-10">Other Programs</h1>
+                <p class="text-white/90 text-lg max-w-2xl mx-auto relative z-10">School ends, but your journey to eternal reward begins!
+                The precious time after school is a golden opportunity to memorize the Holy Quran – the most rewarding investment for this life and the Hereafter.</p>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 sm:p-10">
+                <!-- Accordion -->
+                <div class="space-y-4">
+                    <!-- Duration -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                            <span class="font-heading text-xl text-islamic-green font-bold">Complete Duration of Course</span>
+                            <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden bg-white px-6 py-4 text-gray-700 border-t border-gray-100">
+                            <p>The duration of this course depends on the individual student's requirements and commitment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timing -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                            <span class="font-heading text-xl text-islamic-green font-bold">Timing of Classes</span>
+                            <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden bg-white px-6 py-4 text-gray-700 border-t border-gray-100">
+                            <p>Timing of this program is from 3:00 PM to 9:00 PM on Mondays to Saturdays.</p>
+                        </div>
+                    </div>
+
+                    <!-- Schedule Plan -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                            <span class="font-heading text-xl text-islamic-green font-bold">Schedule Plan</span>
+                            <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden bg-white px-6 py-4 text-gray-700 border-t border-gray-100">
+                            <p>Weekly lectures, interactive workshops, practical demonstrations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Topics -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                            <span class="font-heading text-xl text-islamic-green font-bold">Topics Covered</span>
+                            <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden bg-white px-6 py-4 text-gray-700 border-t border-gray-100">
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Nasihah Series (Masail/Aqaid)</li>
+                                <li>Seeratun Nabi (Life of Prophet PBUH)</li>
+                                <li>Akhlaq & Character Building</li>
+                                <li>Daily Duas & Supplications</li>
+                                <li>Islamic History</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="index.html#contact" class="inline-block bg-islamic-green hover:bg-green-800 text-white font-bold py-4 px-8 rounded-xl transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Contact Us to Enroll
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-islamic-green text-white py-10 px-6 border-t-8 border-islamic-gold mt-auto">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="font-heading text-3xl sm:text-4xl text-islamic-gold mb-2">Contact Us</h2>
+                <div class="w-20 h-1 bg-islamic-gold mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-center mb-8">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition">
+                    <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">📍</div>
+                    <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
+                    <div class="bg-white/10 rounded-xl p-3 mb-3">
+                        <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
+                        <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
+                        <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
+                        <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-3">
+                        <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
+                        <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
+                        <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
+                        <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                        <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">📞</div>
+                        <h3 class="font-heading text-lg text-islamic-gold mb-3">Call Us</h3>
+                        <p class="text-xl font-bold">+91 952-848-8899</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                        <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">✉️</div>
+                        <h3 class="font-heading text-lg text-islamic-gold mb-3">Email Us</h3>
+                        <p class="font-bold break-all">institutealhindislamic</p>
+                        <p class="font-bold">at gmail dot com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center border-t border-white/20 pt-6">
+                <h2 class="font-heading text-2xl text-islamic-gold mb-1">Maktab Al-Hind</h2>
+                <p class="opacity-80 text-sm">Affiliated to Deeni Taleemi Board, Jamiat Ulema-e-Hind</p>
+            </div>
+        </div>
+        <div class="text-center mt-6 pt-3 border-t border-green-800 opacity-60 text-xs">
+            &copy; 2024 Maktab Al-Hind. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

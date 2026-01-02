@@ -12,7 +12,7 @@ function scrollCarousel(direction) {
 // Video Carousel Functionality
 // ==========================================
 let currentVideoSlide = 0;
-const totalVideoSlides = 5;
+const totalVideoSlides = 7;
 
 function changeVideoSlide(direction) {
     let newSlide = currentVideoSlide + direction;
@@ -130,10 +130,21 @@ function togglePlay(index) {
     const video = getVideoByIndex(index);
     if (!video) return;
     
+    // Ensure video source is loaded before playing
+    if (!video.src && video.dataset.src) {
+        video.src = video.dataset.src;
+        video.load();
+    }
+    
     if (video.paused) {
         video.play().then(() => {
             updatePlayButtonIcon(index, true);
-        }).catch(e => console.log('Play prevented:', e));
+        }).catch(e => {
+            // Only log if it's not a user abort
+            if (e.name !== 'AbortError') {
+                console.log('Play prevented:', e);
+            }
+        });
     } else {
         video.pause();
         updatePlayButtonIcon(index, false);
