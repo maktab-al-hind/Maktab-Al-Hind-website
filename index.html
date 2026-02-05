@@ -74,214 +74,67 @@
 
             <!-- Hero Section with Video Carousel -->
             <section class="relative w-full bg-transparent overflow-hidden px-4 sm:px-6">
-                <!-- Video Carousel Container - Responsive aspect ratio -->
-                <div id="videoCarousel" class="relative w-full aspect-[4/3] md:aspect-video max-h-[70vh]">
+                <!-- Video Carousel Container -->
+                <div id="videoCarousel" class="relative w-full max-w-4xl mx-auto">
                     <!-- Video Slides -->
-                    <div class="video-slides relative w-full h-full">
+                    <div class="video-slides relative w-full max-w-sm mx-auto aspect-[9/16] sm:aspect-[9/16] md:max-w-md bg-black rounded-xl overflow-hidden">
                         <!-- Video 1 -->
-                        <div class="video-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain rotate-90"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 10.43.17 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(0)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(0)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(0)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(0)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/iev9C3ZS8po" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 2 -->
-                        <div class="video-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 10.28.15 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(1)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(1)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(1)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(1)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/qKezkfpvn0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 3 -->
-                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 11.13.33 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(2)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(2)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(2)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(2)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xdznCn5z6uk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 4 -->
-                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.39.19 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(3)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(3)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(3)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(3)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/qkjSKORdSTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 5 -->
-                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.40.22 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(4)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(4)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(4)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(4)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/7was-NboOgQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 6 -->
-                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.40.45 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(5)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(5)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(5)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(5)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/3MPgZ0nnImA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <!-- Video 7 -->
-                        <div class="video-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center bg-black">
-                            <video 
-                                class="w-full h-full object-contain"
-                                data-src="https://raw.githubusercontent.com/maktab-al-hind/Maktab-Al-Hind-website/main/WhatsApp Video 2026-01-01 at 8.41.07 PM.mp4"
-                                loop
-                                playsinline>
-                            </video>
-                            <!-- Video Controls -->
-                            <div class="video-controls absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full z-30">
-                                <button onclick="togglePlay(6)" class="play-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="play-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    <svg class="pause-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                                </button>
-                                <button onclick="toggleMute(6)" class="mute-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="muted-icon w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                    <svg class="unmuted-icon w-5 h-5 md:w-6 md:h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                                </button>
-                                <button onclick="restartVideo(6)" class="restart-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-                                </button>
-                                <button onclick="toggleFullscreen(6)" class="fullscreen-btn w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:text-islamic-gold transition">
-                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                                </button>
-                            </div>
+                        <div class="video-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/g75A3vckLW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+
+                        <!-- Navigation Arrows -->
+                        <button onclick="changeVideoSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="changeVideoSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
                     </div>
 
-                    <!-- Navigation Arrows -->
-                    <button onclick="changeVideoSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    </button>
-                    <button onclick="changeVideoSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-islamic-green/80 hover:bg-islamic-gold text-white hover:text-islamic-green rounded-full flex items-center justify-center transition-all duration-300 shadow-lg z-20 backdrop-blur-sm">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </button>
-
-                    <!-- Dot Indicators -->
-                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+                    <!-- Dot Indicators (below video) -->
+                    <div class="flex justify-center gap-3 mt-4">
                         <button onclick="goToVideoSlide(0)" class="video-dot w-3 h-3 rounded-full bg-islamic-gold transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(1)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(2)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(3)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(4)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(5)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
-                        <button onclick="goToVideoSlide(6)" class="video-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(1)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(2)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(3)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(4)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(5)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
+                        <button onclick="goToVideoSlide(6)" class="video-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300 shadow-md"></button>
                     </div>
                 </div>
             </section>
+
+            <!-- Gender Info Banner -->
+            <div class="text-center pt-16 px-4">
+                <p class="font-heading text-2xl sm:text-3xl text-islamic-green font-bold">
+                    <span class="text-islamic-gold">✦</span> For both boys and girls <span class="text-islamic-gold">✦</span>
+                </p>
+            </div>
 
             <!-- Curriculum Section -->
             <section id="curriculum" class="py-16 px-4 bg-transparent flex-grow">
