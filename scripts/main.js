@@ -260,3 +260,5 @@ Object.assign(enToUr, {
 for (const [en, ur] of Object.entries(enToUr)) {
     urToEn[ur] = en;
 }
+
+//
