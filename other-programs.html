@@ -27,11 +27,12 @@
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html" class="text-white hover:text-islamic-gold transition font-body">Home</a>
-                        <a href="index.html#curriculum" class="text-white hover:text-islamic-gold transition font-body">Curriculum</a>
-                        <a href="index.html#about" class="text-white hover:text-islamic-gold transition font-body">About Us</a>
-                        <a href="index.html#contact" class="text-white hover:text-islamic-gold transition font-body">Contact</a>
+                    <div class="ms-10 flex items-center gap-8">
+                        <a href="index.html" class="text-white hover:text-islamic-gold transition font-body" data-translate="Home">Home</a>
+                        <a href="index.html#curriculum" class="text-white hover:text-islamic-gold transition font-body" data-translate="Curriculum">Curriculum</a>
+                        <a href="index.html#about" class="text-white hover:text-islamic-gold transition font-body" data-translate="About Us">About Us</a>
+                        <a href="index.html#contact" class="text-white hover:text-islamic-gold transition font-body" data-translate="Contact">Contact</a>
+                        <button onclick="toggleLanguage()" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition translate-btn">اردو</button>
                     </div>
                 </div>
                 <!-- Mobile Menu Button -->
@@ -47,10 +48,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-islamic-green border-t border-green-800">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Home</a>
-                <a href="index.html#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Curriculum</a>
-                <a href="index.html#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">About Us</a>
-                <a href="index.html#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Contact</a>
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Home">Home</a>
+                <a href="index.html#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Curriculum">Curriculum</a>
+                <a href="index.html#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="About Us">About Us</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Contact">Contact</a>
+                <button onclick="toggleLanguage()" class="block w-full text-start px-3 py-2 bg-islamic-gold text-islamic-green rounded font-bold mt-2 translate-btn">اردو</button>
             </div>
         </div>
     </nav>
@@ -78,7 +80,7 @@
                 <div class="space-y-4">
                     <!-- Duration -->
                     <div class="border border-gray-200 rounded-xl overflow-hidden">
-                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                        <button class="accordion-btn w-full px-6 py-4 text-start bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
                             <span class="font-heading text-xl text-islamic-green font-bold">Complete Duration of Course</span>
                             <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -89,7 +91,7 @@
 
                     <!-- Timing -->
                     <div class="border border-gray-200 rounded-xl overflow-hidden">
-                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                        <button class="accordion-btn w-full px-6 py-4 text-start bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
                             <span class="font-heading text-xl text-islamic-green font-bold">Timing of Classes</span>
                             <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -100,7 +102,7 @@
 
                     <!-- Schedule Plan -->
                     <div class="border border-gray-200 rounded-xl overflow-hidden">
-                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                        <button class="accordion-btn w-full px-6 py-4 text-start bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
                             <span class="font-heading text-xl text-islamic-green font-bold">Schedule Plan</span>
                             <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -111,7 +113,7 @@
 
                     <!-- Topics -->
                     <div class="border border-gray-200 rounded-xl overflow-hidden">
-                        <button class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
+                        <button class="accordion-btn w-full px-6 py-4 text-start bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition-colors">
                             <span class="font-heading text-xl text-islamic-green font-bold">Topics Covered</span>
                             <svg class="w-6 h-6 text-islamic-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -138,35 +140,46 @@
 
     <!-- Footer -->
     <footer id="contact" class="bg-islamic-green text-white py-10 px-6 border-t-8 border-islamic-gold mt-auto">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-8">
                 <h2 class="font-heading text-3xl sm:text-4xl text-islamic-gold mb-2">Contact Us</h2>
                 <div class="w-20 h-1 bg-islamic-gold mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-6 text-center mb-8">
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition">
-                    <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">📍</div>
-                    <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
-                    <div class="bg-white/10 rounded-xl p-3 mb-3">
-                        <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
-                        <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
-                        <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
-                        <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8 items-stretch">
+                <!-- Location QR Code -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex flex-col items-center justify-center">
+                    <div class="bg-white p-3 rounded-2xl border-2 border-islamic-gold shadow-lg">
+                        <img src="assets/location.jpeg" alt="Location QR Code" class="w-36 h-36 sm:w-40 sm:h-40 object-contain rounded-xl">
                     </div>
-                    <div class="bg-white/10 rounded-xl p-3">
-                        <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
-                        <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
-                        <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
-                        <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                    <p class="text-xs text-gray-200 mt-3 font-semibold">Scan for Location</p>
+                </div>
+                <!-- Address -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">📍</div>
+                        <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
+                        <div class="bg-white/10 rounded-xl p-3 mb-3">
+                            <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
+                            <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
+                            <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
+                            <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
+                        </div>
+                        <div class="bg-white/10 rounded-xl p-3">
+                            <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
+                            <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
+                            <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
+                            <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                            <a href="https://maps.app.goo.gl/DLQ3QYkRL9KXbayF8" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-xs font-bold text-islamic-gold hover:text-white border border-islamic-gold hover:bg-islamic-gold/20 transition px-3 py-1 rounded-full">View on Google Maps</a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                <div class="flex flex-col gap-4 justify-between">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1 flex flex-col items-center justify-center">
                         <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">📞</div>
                         <h3 class="font-heading text-lg text-islamic-gold mb-3">Call Us</h3>
-                        <p class="text-xl font-bold">+91 952-848-8899</p>
+                        <p class="text-xl font-bold" dir="ltr">+91 952-848-8899</p>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1 flex flex-col items-center justify-center">
                         <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">✉️</div>
                         <h3 class="font-heading text-lg text-islamic-gold mb-3">Email Us</h3>
                         <p class="font-bold break-all">institutealhindislamic</p>

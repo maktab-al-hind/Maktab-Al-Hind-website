@@ -27,12 +27,12 @@
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="text-white hover:text-islamic-gold transition font-body">Home</a>
-                        <a href="#curriculum" class="text-white hover:text-islamic-gold transition font-body">Curriculum</a>
-                        <a href="#about" class="text-white hover:text-islamic-gold transition font-body">About Us</a>
-                        <a href="#contact" class="text-white hover:text-islamic-gold transition font-body">Contact</a>
-                        <!-- <a href="#" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Enroll Now</a> -->
+                    <div class="ms-10 flex items-center gap-8">
+                        <a href="#home" class="text-white hover:text-islamic-gold transition font-body" data-translate="Home">Home</a>
+                        <a href="#curriculum" class="text-white hover:text-islamic-gold transition font-body" data-translate="Curriculum">Curriculum</a>
+                        <a href="#our-mission" class="text-white hover:text-islamic-gold transition font-body" data-translate="Our Mission">Our Mission</a>
+                        <a href="#contact" class="text-white hover:text-islamic-gold transition font-body" data-translate="Contact">Contact</a>
+                        <button onclick="toggleLanguage()" class="bg-islamic-gold text-islamic-green px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition translate-btn">اردو</button>
                     </div>
                 </div>
                 <!-- Mobile Menu Button -->
@@ -48,11 +48,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-islamic-green border-t border-green-800">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Home</a>
-                <a href="#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Curriculum</a>
-                <a href="#about" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">About Us</a>
-                <a href="#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body">Contact</a>
-                <!-- <a href="#curriculum" class="block px-3 py-2 bg-islamic-gold text-islamic-green rounded-full font-bold text-center mt-2">Enroll Now</a> -->
+                <a href="#home" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Home">Home</a>
+                <a href="#curriculum" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Curriculum">Curriculum</a>
+                <a href="#our-mission" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Our Mission">Our Mission</a>
+                <a href="#contact" class="block px-3 py-2 text-white hover:text-islamic-gold transition font-body" data-translate="Contact">Contact</a>
+                <button onclick="toggleLanguage()" class="block w-full text-start px-3 py-2 bg-islamic-gold text-islamic-green rounded font-bold mt-2 translate-btn">اردو</button>
             </div>
         </div>
     </nav>
@@ -78,6 +78,10 @@
                 <div id="videoCarousel" class="relative w-full max-w-4xl mx-auto">
                     <!-- Video Slides -->
                     <div class="video-slides relative w-full max-w-sm mx-auto aspect-[9/16] sm:aspect-[9/16] md:max-w-md bg-black rounded-xl overflow-hidden">
+                        <!-- Video 0 -->
+                        <div class="video-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/VtxAonsVbfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <!-- Video 1 -->
                         <div class="video-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/iev9C3ZS8po" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -129,8 +133,18 @@
                 </div>
             </section>
 
+            <!-- Our Mission Section -->
+            <section id="our-mission" class="py-12 px-4 bg-transparent text-center mt-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="font-heading text-4xl text-islamic-green font-bold border-b-2 border-islamic-gold inline-block pb-2 mb-6">Our Mission</h2>
+                    <p class="font-body text-lg text-gray-700 leading-relaxed px-4 md:px-16 lg:px-24">
+                        Our mission is very clear: to prepare individuals who are firm in their faith, aware of the demands of the world, and who light the candle of goodness in society through their character, knowledge, and actions. We invite you all from the depths of our hearts to make your sons, daughters, and entire household a part of this beautiful educational journey. Let us together raise a generation that is a beautiful example of knowledge, faith, and character—a generation that not only walks on the path of religion but also achieves eminence in the world.
+                    </p>
+                </div>
+            </section>
+
             <!-- Gender Info Banner -->
-            <div class="text-center pt-16 px-4">
+            <div class="text-center pt-8 px-4">
                 <p class="font-heading text-2xl sm:text-3xl text-islamic-green font-bold">
                     <span class="text-islamic-gold">✦</span> For both boys and girls <span class="text-islamic-gold">✦</span>
                 </p>
@@ -291,51 +305,62 @@
 
     <!-- Footer -->
             <footer id="contact" class="bg-islamic-green text-white py-10 px-6 border-t-8 border-islamic-gold">
-                <div class="max-w-5xl mx-auto">
+                <div class="max-w-6xl mx-auto">
                     <!-- Contact Us Section - Prominent -->
                     <div class="text-center mb-8">
                         <h2 class="font-heading text-3xl sm:text-4xl text-islamic-gold mb-2">Contact Us</h2>
                         <div class="w-20 h-1 bg-islamic-gold mx-auto rounded-full"></div>
                     </div>
                     
-                    <div class="grid md:grid-cols-2 gap-6 text-center mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8 items-stretch">
+                        <!-- Location QR Code -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex flex-col items-center justify-center">
+                            <div class="bg-white p-3 rounded-2xl border-2 border-islamic-gold shadow-lg">
+                                <img src="assets/location.jpeg" alt="Location QR Code" class="w-36 h-36 sm:w-40 sm:h-40 object-contain rounded-xl">
+                            </div>
+                            <p class="text-xs text-gray-200 mt-3 font-semibold">Scan for Location</p>
+                        </div>
+
                         <!-- Address -->
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition">
-                            <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
-                                📍
-                            </div>
-                            <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
-                            
-                            <!-- Branch 1 -->
-                            <div class="bg-white/10 rounded-xl p-3 mb-3">
-                                <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
-                                <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
-                                <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
-                                <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
-                            </div>
-                            
-                            <!-- Branch 2 -->
-                            <div class="bg-white/10 rounded-xl p-3">
-                                <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
-                                <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
-                                <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
-                                <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                                    📍
+                                </div>
+                                <h3 class="font-heading text-lg text-islamic-gold mb-3">Our Locations</h3>
+                                
+                                <!-- Branch 1 -->
+                                <div class="bg-white/10 rounded-xl p-3 mb-3">
+                                    <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 1</h4>
+                                    <p class="text-sm leading-relaxed">Gali No. 3, near Ashrafiya Masjid</p>
+                                    <p class="text-sm leading-relaxed">Kardampuri, Shahadara</p> 
+                                    <p class="text-sm leading-relaxed font-semibold">New Delhi - 110094</p>
+                                </div>
+                                
+                                <!-- Branch 2 -->
+                                <div class="bg-white/10 rounded-xl p-3">
+                                    <h4 class="font-bold text-islamic-gold text-sm mb-1">Branch 2</h4>
+                                    <p class="text-sm leading-relaxed">Gali No. 35, near Post Office</p>
+                                    <p class="text-sm leading-relaxed">Zakir Nagar (Dhalan), Okhla</p> 
+                                    <p class="text-sm leading-relaxed font-semibold">New Delhi - 110025</p>
+                                    <a href="https://maps.app.goo.gl/DLQ3QYkRL9KXbayF8" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-xs font-bold text-islamic-gold hover:text-white border border-islamic-gold hover:bg-islamic-gold/20 transition px-3 py-1 rounded-full">View on Google Maps</a>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Phone & Email Column -->
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 justify-between">
                             <!-- Phone -->
-                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1 flex flex-col items-center justify-center">
                                 <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
                                     📞
                                 </div>
                                 <h3 class="font-heading text-lg text-islamic-gold mb-3">Call Us</h3>
-                                <p class="text-xl font-bold">+91 952-848-8899</p>
+                                <p class="text-xl font-bold" dir="ltr">+91 952-848-8899</p>
                             </div>
                             
                             <!-- Email -->
-                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 hover:bg-white/20 transition flex-1 flex flex-col items-center justify-center">
                                 <div class="w-12 h-12 bg-islamic-gold rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
                                     ✉️
                                 </div>
