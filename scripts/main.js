@@ -12,9 +12,10 @@ function scrollCarousel(direction) {
 // Video Carousel Functionality
 // ==========================================
 let currentVideoSlide = 0;
-const totalVideoSlides = 7;
 
 function changeVideoSlide(direction) {
+    const slides = document.querySelectorAll('.video-slide');
+    const totalVideoSlides = slides.length || 8;
     let newSlide = currentVideoSlide + direction;
     
     // Wrap around
